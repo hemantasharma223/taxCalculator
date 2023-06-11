@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <h1>Tax Calculator for Nepal</h1>
+    <div class="container">
+        <table>
+          <tr>
+            <th ><u>Income</u></th>
+              <th></th>
+            <th><u>Annual Deduction</u></th>
+          </tr>
+          <tr>
+              <td>Salary</td>
+              <td><input type="text" id="salary" name="salary" placeholder="Enter Your monthely Salary     "></td>
+              <td id="tc">Social Security Fund:</td>
+              <td><input type="text" name="securityFund" /></td>
+          </tr>
+          <tr>
+            <td>Number Of Months:</td>
+            <td><input type="number" name="noOfMonths" id="noOfMonths" value="12"></td>
+            <td id="tc">Employees Provident Fund:</td>
+            <td><input type="text" name="emplProvFund" /></td>
+          </tr>
+          <tr>
+            <td>Bonus:</td>
+            <td><input type="text" name="bonus" /></td>
+            <td id="tc">Chitizen Investment Trust:</td>
+            <td><input type="text" name="chitInvTrust" /></td>
+          </tr>
+         </table>
+      </div>
+            <button id="submit" onclick="tax()">Submit</button>
+            <h3 id="output"></h3>
+        <script src="index.js"></script>
+</body>
+</html>
