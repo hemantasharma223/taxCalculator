@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-color: aqua;
+}
 h1{
     text-align: center;
     font-weight: bold;
@@ -10,7 +13,6 @@ h1{
     display: flex;
     justify-content: center;
     background-color: cyan;
-    margin: 15px;
     margin-bottom: 20px;
     padding: 20px;
     font-size: x-large;
@@ -19,6 +21,7 @@ h1{
 table{
     border-collapse: collapse;
 }
+
 td{
     margin-right: 45px;
     padding-left: 45px;
@@ -41,4 +44,9 @@ input {
     width: 80px;
     margin-top: 20px;
     background-color: greenyellow;
+}
+
+h3 {
+    background-color: green;
+    padding: 20px;
 }
