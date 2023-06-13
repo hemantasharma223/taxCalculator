@@ -1,52 +1,63 @@
-* {
-    box-sizing: border-box;
+body {
+	background-color: aqua;
 }
-body{
-    background-color: aqua;
+h1 {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
-h1{
-    text-align: center;
-    font-weight: bold;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    background-color: cyan;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-size: x-large;
-    font-weight: bold;
-}
-table{
-    border-collapse: collapse;
-}
-
-td{
-    margin-right: 45px;
-    padding-left: 45px;
-    padding: 10px;
-}
-
 input {
-    height: 7vh;
-    width: 75%;
-    margin-top: 20px;
-    margin-right: 45px;
-    margin-left: 45px;
-    border-radius: 5px;
-    text-align: right;
-    font-size: large;
+	height: 5vh;
+	width: 75%;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	padding: 1vh;
+	border: solid black 2px;
+	border-radius: 5px;
+	font-size: larger;
+	text-align: right;
 }
-
+table {
+	margin-top: 4vh;
+	margin-left: auto;
+}
+tbody {
+	font-size: x-large;
+	font-weight: bold;
+}
+thead {
+	font-size: xx-large;
+}
+div {
+	margin-left: 5vh;
+	margin-top: 5vh;
+}
+button {
+	margin-right: 4vh;
+	padding: 13px;
+	font-size: large;
+	font-weight: bold;
+	color: whitesmoke;
+}
+button:hover {
+	cursor: pointer;
+}
+#reset {
+	background-color: darkred;
+}
+tbody {
+	font-size: x-large;
+	font-weight: bold;
+}
+thead {
+	font-size: xx-large;
+}
 #submit {
-    height: 50px;
-    width: 80px;
-    margin-top: 20px;
-    background-color: greenyellow;
+	background-color: green;
 }
-
-h3 {
-    background-color: green;
-    padding: 20px;
+p {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#outputArea {
+	background-color: aquamarine;
 }

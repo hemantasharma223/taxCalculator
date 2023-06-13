@@ -1,39 +1,27 @@
-function tax(){
-    let salary = document.getElementById("salary").value;
-    let noOfMonths = document.getElementById("noOfMonths").value;
-    let salaryAmount = salary * noOfMonths
-    let tax1
-    let totalTax
+const form = document.getElementById('form');
+const salary = document.getElementById("salary");
+const noOfMonths = document.getElementById("noOfMonths");
+const securityFund = document.getElementById("securityFund");
+const emplProvFund = document.getElementById("emplProvFund");
+const chitInvTrust = document.getElementById("chitInvTrust");
+const bonus = document.getElementById("bonus");
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const salaryAmount = salary.value;
+    localStorage.setItem('salaryAmount',salaryAmount);
+    const months = noOfMonths.value;
+    localStorage.setItem('noOfMonths',months);
+    const securityFundVal = securityFund.value;
+    localStorage.setItem('securityFund',securityFundVal);
+    const emplProvFundVal = emplProvFund.value;
+    localStorage.setItem('emplProvFund',emplProvFundVal);
+    const chitInvTrustVal = chitInvTrust.value;
+    localStorage.setItem('chitInvTrust',chitInvTrustVal);
+    const bonusVal = bonus.value;
+    localStorage.setItem('bonus',bonusVal);
 
 
-    if (salaryAmount < 500000){
-        tax1 = salaryAmount * 1 / 100
-        document.getElementById("output").innerHTML = tax1;
-    }
-
-
-    else if(salaryAmount >= 500000 && salaryAmount < 700000) {
-        tax1 = (500000 * 1 /100 + (salaryAmount-500000) * 10 / 100)
-        document.getElementById("output").innerHTML = tax1;
-    }
-
-
-    else if(salaryAmount>=700000 && salaryAmount < 1000000){
-        tax1 = (500000 * 1 / 100) + (200000 * 10 / 100) + (salaryAmount-700000) * 20 / 100
-        document.getElementById("output").innerHTML = tax1;
-    }
-
-
-    else if (salaryAmount >= 1000000 && salaryAmount < 2000000) {
-        tax1 = (500000 * 1 / 100) + (200000 * 10 / 100) + (300000 * 20 / 100) + (salaryAmount-1000000) * 30 / 100
-        document.getElementById("output").innerHTML = tax1;
-    }
-
-
-    else{
-        let tempSalary = salaryAmount - 2000000
-        tax1 = (500000 * 1 / 100) + (200000 * 10 / 100) + (300000 * 20 / 100) + (1000000 * 30 / 100) + tempSalary * 36 / 100
-        document.getElementById("output").innerHTML = tax1;
-    }
-    
-}
+    window.location.href = "output.html"
+})
